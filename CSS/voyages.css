@@ -1,25 +1,135 @@
+/*header*/
+
 header {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
 }
 
 #menu {
     width: 100%;
     height: 10%;
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 0.699);
     position: fixed;
+    z-index: 999;
 }
 
 #background {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    position: relative;
+    overflow: hidden;
 }
+
+.imgbackground {
+    position: absolute;
+    width: 1920px;
+    height: 100%;
+}
+
+#wm {
+    animation: wmanim 40s infinite;
+    opacity: 100;
+}
+
+#t2 {
+    animation: t2anim 40s infinite;
+    opacity: 0;
+
+}
+
+#t1 {
+    animation: t1anim 40s infinite;
+    opacity: 0;
+}
+
+#i2 {
+    animation: i2anim 40s infinite;
+    opacity: 0;
+}
+ 
+#i1 {
+    animation: i1anim 40s infinite;
+    opacity: 0;
+}
+
+#j2 {
+    animation: j2anim 40s infinite;
+    opacity: 0;
+}
+
+#j1 {
+    animation: j1anim 40s infinite;
+    opacity: 0;
+}
+
+.titrepays {
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+}
+
+#turquie2 {
+    position: absolute;
+    margin: 45%;
+    z-index: 500;
+    opacity: 0;
+    animation: tt2anim 40s infinite;
+    
+}
+
+#turquie {
+    position: absolute;
+    margin: 40%;
+    z-index: 500;
+    opacity: 0;
+    animation: tt1anim 40s infinite;
+}
+
+
+#islande {
+    position: absolute;
+    margin: 30%;
+    z-index: 500;
+    opacity: 0;
+    animation: ti1anim 40s infinite;
+}
+
+#islande2 {
+    position: absolute;
+    margin: 35%;
+    z-index: 500;
+    opacity: 0;
+    animation: ti2anim 40s infinite;
+}
+
+#japon2 {
+    position: absolute;
+    margin: 40%;
+    z-index: 500;
+    opacity: 0;
+    animation: tj1anim 40s infinite;
+}
+
+#japon {
+    position: absolute;
+    margin: 35%;
+    z-index: 500;
+    opacity: 0;
+    animation: tj2anim 40s infinite;
+}
+
+
+
+
+/*header*/
+
+/*main*/
 
 body {
     margin: 0 auto;
 }
+
+
 
 main {
     width: 100%;
@@ -27,9 +137,204 @@ main {
     background-color: chocolate;
 }
 
+/*main*/
+/*footer*/
+
 footer {
     width: 100%;
     height: 25vh;
     background-color: darkgreen;
+}
+
+/*footer*/
+/*keyframes*/
+
+@keyframes wmanim {
+    0% {
+        opacity: 100;
+    }
+    20% {
+        opacity: 100;
+    }
+    
+    28% {
+        transform: translate(7%)scale(1.2);
+        opacity: 0;
+    }
+    88%{
+        opacity: 0;
+    }
+    99% {
+        opacity: 100;
+    }
+    
+}
+
+@keyframes t2anim {
+    2% {
+        opacity: 0;
+    }
+    28% {
+        opacity: 100;
+    }
+    40% {
+        transform: translate(-5%)scale(1.1);
+        opacity: 0;
+    }
+}
+
+@keyframes t1anim {
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 100;
+    }
+    52% {
+        transform: translate(10%)scale(1.3);
+        opacity: 0;
+    }
+}
+
+@keyframes i2anim {
+    32% {
+        opacity: 0;
+    }
+    52% {
+        opacity: 100;
+    }
+    64% {
+        transform: translate(-20%)scale(1.6);
+        opacity: 0;
+    }
+}
+
+@keyframes i1anim {
+    44% {
+        opacity: 0;
+    }
+    64% {
+        opacity: 100;
+
+    }
+    76% {
+        transform: translate(20%)scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes j2anim {
+    56% {
+        opacity: 0;
+    }
+    76% {
+        opacity: 100;
+    }
+
+    88% {
+        transform: translate(-20%)scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes j1anim {
+    68% {
+        opacity: 0;
+    }
+    88% {
+        opacity: 100;
+    }
+
+    100% {
+        transform: translate(20%)scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes tt1anim {
+    21% {
+        opacity: 0;
+        transform: translatex(0)
+    }
+    28% {
+        opacity: 100;
+    }
+    45% {
+        transform: translatex(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes tt2anim {
+    21% {
+        opacity: 0;
+        transform: translatex(0)
+    }
+    28% {
+        opacity: 100;
+    }
+    45% {
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes ti1anim {
+    45% {
+        opacity: 0;
+        transform: translatex(0)
+    }
+    52% {
+        opacity: 100;
+    }
+    70% {
+        transform: translatex(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes ti2anim {
+    45% {
+        opacity: 0;
+        transform: translatex(0)
+    }
+    52% {
+        opacity: 100;
+    }
+    70% {
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes tj1anim {
+    70% {
+        opacity: 0;
+        transform: translatex(0);
+    }
+    76% {
+        opacity: 100;
+    }
+    95%{
+        transform: translatex(-100%);
+        opacity: 0;
+    
+    }
+}
+
+@keyframes tj2anim {
+    70% {
+        opacity: 0;
+        transform: translatex(0);
+    }
+    76% {
+        opacity: 100;
+    }
+    95%{
+        transform: translatex(100%);
+        opacity: 0;
+    
+    }
+
 }
 
