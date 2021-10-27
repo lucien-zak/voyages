@@ -1,3 +1,8 @@
+* {
+    scroll-behavior: smooth;
+
+}
+
 body {
     margin: 0 0;
     font-family: 'Roboto', sans-serif;
@@ -71,7 +76,7 @@ ul {
 #btnnav {
     position: absolute;
     z-index: 999;
-    background-color: rgb(144, 135, 222);
+    background-color: rgba(255, 255, 255, 0.555);
 }
 
 #btnnav[type="checkbox"]:checked ~	nav {
@@ -405,21 +410,38 @@ th, td {
 
 footer {
     display: flex;
-    height: 20vh;
-    width: 100%;
-    background-color: black ;
-    color: white;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: none;
 }
 
-.foot {
-    margin: 0 10px;
+footer table {
+    width: 100%;
+    box-shadow: none;
+    background-color: black;
+}
+
+footer table th,
+footer table td {
+    text-align: center;
     transition: all 330ms ease-in-out;
-
 }
 
-.foot:hover {
-    background-color: grey;
+footer table th {
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 0.5em;
+}
+
+footer table td:nth-child(1),
+footer table td:nth-child(2)
+ {
+    border-right: 1px solid wheat;    
+}
+
+footer table td:hover {
+    font-size: 1.5em;
 }
 

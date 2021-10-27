@@ -15,7 +15,8 @@
 <body>
     <header>
         <input type="checkbox" id="btnnav" hidden>
-        <label id="btnnav" for="btnnav">hamburger</label>
+        <label id="btnnav" for="btnnav"><img
+                src="https://img.icons8.com/material-outlined/48/000000/menu--v3.png" /></label>
         <div id="background1">
             <video muted autoplay loop id="video1" src="../img/tokyo.mp4"></video>
             <h1 id="titrevideo">Découvrez Tokyo</h1>
@@ -28,17 +29,17 @@
                 <input type="checkbox" id="btnluciena" hidden>
                 <label for="btnluciena">Lucien <i class="fas fa-chevron-down premier"></i></label>
                 <ul class="paysderoulantal">
-                    <li>Japon (Tokyo)</li>
+                    <li><a href="../voyages/voyage1.html">Japon (Tokyo)</a></li>
                 </ul>
                 <input type="checkbox" id="btnmeriema" hidden>
                 <label for="btnmeriema">Meriem <i class="fas fa-chevron-down premier"></i></label>
                 <ul class="paysderoulantam">
-                    <li>Indonesie</li>
+                    <li><a href="../voyages/voyage2.html">Malaisie</a></li>
                 </ul>
                 <input type="checkbox" id="btnsoniaa" hidden>
                 <label for="btnsoniaa">Sonia <i class="fas fa-chevron-down premier"></i></label>
                 <ul class="paysderoulantas">
-                    <li>Inde</li>
+                    <li><a href="../voyages/voyage3.html">Inde</a></li>
                 </ul>
             </ul>
 
@@ -48,17 +49,17 @@
                 <input type="checkbox" id="btnluciene" hidden>
                 <label for="btnluciene">Lucien <i class="fas fa-chevron-down premier"></i></label>
                 <ul class="paysderoulantel">
-                    <li>Italie</li>
+                    <li><a href="../voyages/voyage4.html">Italie (Venise)</a></li>
                 </ul>
                 <input type="checkbox" id="btnmerieme" hidden>
                 <label for="btnmerieme">Meriem <i class="fas fa-chevron-down premier"></i></label>
                 <ul class="paysderoulantem">
-                    <li>Islande</li>
+                    <li><a href="../voyages/voyage5.html">Islande</a></li>
                 </ul>
                 <input type="checkbox" id="btnsoniae" hidden>
                 <label for="btnsoniae">Sonia <i class="fas fa-chevron-down premier"></i></label>
                 <ul class="paysderoulantes">
-                    <li>Turquie</li>
+                    <li><a href="../voyages/voyage6.html">Turquie</a></li>
                 </ul>
             </ul>
 
@@ -71,7 +72,8 @@
                     src="../img/akihabara.jpg">
             </div>
             <div class="mosaique">
-                <h1 class="titrecover"><a href="#troisiemepage">Shibuya</a></h1><img class="photocover" src="../img/shibuya.jpg">
+                <h1 class="titrecover"><a href="#troisiemepage">Shibuya</a></h1><img class="photocover"
+                    src="../img/shibuya.jpg">
             </div>
             <div class="mosaique">
                 <h1 class="titrecover">Asakusa</h1><img class="photocover" src="../img/asakusa.jpg">
@@ -228,16 +230,32 @@
         </section>
     </main>
     <footer>
-        <div class="foot">
-            <a href="">Qui sommes-nous ?</a>
-        </div>
-        <div class="foot">
-            <a href="">Contactez-nous</a>
-        </div>
-        <div class="foot">
-            <a href="">Mentions légales</a>
-            <a href="">copyright (©) 2021</a>
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Meriem</th>
+                    <th>Sonia</th>
+                    <th>Lucien</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/meriem-barka">Github</a></td>
+                    <td><a href="https://github.com/sonia-mouhoubi">Github</a></td>
+                    <td><a href="https://github.com/lucien-zak">Github</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../voyages/voyage2.html">Islande</a></td>
+                    <td><a href="../voyages/voyage3.html">Inde</a></td>
+                    <td><a href="../voyages/voyage1.html">Japon</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../voyages/voyage5.html">Malaisie</a></td>
+                    <td><a href="../voyages/voyage6.html">Turquie</a></td>
+                    <td><a href="../voyages/voyage4.html">Italie</a></td>
+                </tr>
+            </tbody>
+        </table>
     </footer>
 </body>
 

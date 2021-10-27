@@ -282,12 +282,40 @@ body {
 /*footer*/
 
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #c8b351;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: none;
 }
-footer a {
-    color : white;
+
+footer table {
+    width: 100%;
+    box-shadow: none;
+    background-color: black;
+}
+
+footer table th,
+footer table td {
+    text-align: center;
+    transition: all 330ms ease-in-out;
+}
+
+footer table th {
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 0.5em;
+}
+
+footer table td:nth-child(1),
+footer table td:nth-child(2)
+ {
+    border-right: 1px solid wheat;    
+}
+
+footer table td:hover {
+    font-size: 1.5em;
 }
 
 /*footer*/
