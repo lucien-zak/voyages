@@ -255,7 +255,7 @@ section#premierepage {
     }
 }
 
-section#deuxiemepage {
+section#deuxiemepage, section#troisiemepage {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -275,6 +275,12 @@ section#deuxiemepage {
     overflow: hidden;
 }
 
+#troisiemepage .photoattache {
+    background-image: url(../img/shibuya.jpg);
+    background-size: cover;
+}
+
+
 h2 {
     text-align: center;
     font-size: 1.7em;
@@ -288,6 +294,7 @@ h2 {
     font-size: 1.2em;
     color: grey;
     text-align: justify;
+    transition: all 330ms ease-in-out;
 }
 
 #sommaire, table {
@@ -327,32 +334,60 @@ th, td {
     background-size: cover;
 }
 
-#mosaiqueb div:nth-child(1) {
+#deuxiemepage #mosaiqueb div:nth-child(1) {
     background-image: url(../img/akihabara.jpg);
 }
 
-#mosaiqueb div:nth-child(2) {
+#deuxiemepage #mosaiqueb div:nth-child(2) {
     background-image: url(../img/akihabara1.jpg);
 }
 
-#mosaiqueb div:nth-child(3) {
+#deuxiemepage #mosaiqueb div:nth-child(3) {
     background-image: url(../img/akihabara2.jpg);
 }
 
-#mosaiqueb div:nth-child(4) {
+#deuxiemepage #mosaiqueb div:nth-child(4) {
     background-image: url(../img/akihabara3.jpg);
 }
 
-#mosaiqueb div:nth-child(5) {
+#deuxiemepage #mosaiqueb div:nth-child(5) {
     background-image: url(../img/akihabara4.jpg);
 }
 
-#mosaiqueb div:nth-child(6) {
+#deuxiemepage #mosaiqueb div:nth-child(6) {
     background-image: url(../img/akihabara5.jpg);
 }
 
-#mosaiqueb div:nth-child(7) {
+#deuxiemepage #mosaiqueb div:nth-child(7) {
     background-image: url(../img/akihabara.jpg);
+}
+
+#troisiemepage #mosaiqueb div:nth-child(1) {
+    background-image: url(../img/shibuya.jpg);
+}
+
+#troisiemepage #mosaiqueb div:nth-child(2) {
+    background-image: url(../img/shibuya1.jpg);
+}
+
+#troisiemepage #mosaiqueb div:nth-child(3) {
+    background-image: url(../img/shibuya2.jpg);
+}
+
+#troisiemepage #mosaiqueb div:nth-child(4) {
+    background-image: url(../img/shibuya3.jpg);
+}
+
+#troisiemepage  #mosaiqueb div:nth-child(5) {
+    background-image: url(../img/shibuya4.jpg);
+}
+
+#troisiemepage #mosaiqueb div:nth-child(6) {
+    background-image: url(../img/shibuya5.jpg);
+}
+
+#troisiemepage #mosaiqueb div:nth-child(7) {
+    background-image: url(../img/shibuya.jpg);
 }
 
 @keyframes caroussel {
@@ -362,5 +397,29 @@ th, td {
     to {
         transform: translate(-612%);
     }
+}
+
+.textedesc:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    background-color: black ;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot {
+    margin: 0 10px;
+    transition: all 330ms ease-in-out;
+
+}
+
+.foot:hover {
+    background-color: grey;
 }
 
