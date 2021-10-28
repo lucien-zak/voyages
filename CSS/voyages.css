@@ -510,13 +510,13 @@ footer table td:hover {
 
 }
 
-aside{
+#aside1{
     padding-top: 1%;
     padding-bottom: 1%;
   }
   
   
-  h1{
+  #tit{
     text-align: center;
   }
   
@@ -532,7 +532,7 @@ aside{
   
   
   
-  main img{
+  .col-1 img{
     margin-left: 15%;
   }
   
