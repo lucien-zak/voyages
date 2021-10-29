@@ -3,17 +3,12 @@
 }
 body {
     scroll-behavior: smooth;
-    line-height: 1.15;
 	margin : 0;
  
-    font-size: 1.3em;
 }
 main {
 	margin : 0;	
     background-color: #FFFAF0;
-}
-section {
-    height: 50vh;
 }
 ul {
     margin: 0;
@@ -23,7 +18,7 @@ li {
     margin: 0;
     list-style: none;
 }
-img {
+.img {
 	max-width : 100%;
     display: block;
     margin-left: auto;
@@ -31,21 +26,12 @@ img {
 }
 a {
 	text-decoration : none;
-	font-weight : bold;
-	color : black;
+	color : currentColor;
 }
-a:hover {
-    color: slategrey;
-}
-
-h1, h2, h3, h4, h5 {
-    text-align : center;
-}
-
 
 /*header*/
 
-header {
+.header {
     width: 100vw;
     height: 100vh;
 }
@@ -130,7 +116,6 @@ header {
     animation: tt1anim 40s infinite;
 }
 
-
 #islande {
     position: absolute;
     margin: 30%;
@@ -170,12 +155,12 @@ header {
     text-align: center;
     z-index: 999;
 }
-nav a {
+.nav1 a {
     color: #c8b351;
     transition: all 330ms ease-in-out;
     text-align: center;
 }
-nav a:hover {
+.nav1 a:hover {
     color: #614e1a;
 }
 .logo {
@@ -212,7 +197,7 @@ nav a:hover {
 .deroulant a {
     color: #dfaf2c;
 }
-nav > ul li:hover .deroulant{
+.nav1 > ul li:hover .deroulant{
     display: block;
 }
 /*Sous-menu*/
@@ -227,60 +212,37 @@ nav > ul li:hover .deroulant{
     color: #e8c464;
 }
 
-/*================================================ FOOTER ==================================================*/
-
-footer {
+/*================================================ MAIN ==================================================*/
+.présentation1 {
+    width: 80%;
+    margin: auto;
+   padding: 1em;
+    display: flex;
+}
+.présentation1 h2, .mosaïques h2 {
     text-align: center;
-    padding: 1em;
-    background-color: #c8b351;
-}
-footer a {
-    color : white;
-}
-
-/*====================================================================== VERSION DESKTOP ==================================================*/
-/*======================================================================                 ==================================================*/
-/*====================================================================== VERSION DESKTOP ==================================================*/
-
-@media screen and (min-width: 1024px){
-/*================================================ HEADER ==================================================*/
-/*================================================ NAVIGATION  */
-    footer {
-        display: flex;
-        padding: 1em;
-        justify-content: space-around;
-}
-    .nav1 {
-        position : fixed;
-        top: 0;
-        display: flex;
-    }
-    .logo {
-        padding : 0.5em;
-
-    }
-    .container {
-        padding : 1em;
-    }
 
 }
-
-
-
-
-
-/*header*/
-
-/*main*/
-
-body {
-    margin: 0 auto;
+.présentation1 img {
+    max-width : 100%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
 }
-
-
-/*main*/
-/*footer*/
-
+.mosaïques{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .mosaïques img{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%;
+  }
+/*================================================ FOOTER ==================================================*/
 footer {
     display: flex;
     justify-content: center;
@@ -516,85 +478,55 @@ footer table td:hover {
   }
   
   
-  #tit{
+#tit{
     text-align: center;
-  }
-  
-  blockquote{
+}
+
+blockquote{
     text-align: center;
     font-weight: bold;
-  }
-  
-  .présentation{
-    padding-top: 5%;
-    padding-bottom: 1%;
-  }
-  
-  
-  
-  .col-1 img{
+}
+
+.col-1 img{
     margin-left: 15%;
-  }
-  
-  p{
-    text-align: center;
-    margin-left: 5%;
-  }
-  /*=========MOBIL FIRST=========*/
-  
-  @media screen and (min-width:375px){
-  
-    img{
-      border-radius: 5%;
-      width: 70%;
+}
+
+  /*====================================================================== VERSION DESKTOP ==================================================*/
+/*======================================================================                 ==================================================*/
+/*====================================================================== VERSION DESKTOP ==================================================*/
+
+@media screen and (min-width: 1024px){
+    .nav1 {
+        position : fixed;
+        top: 0;
+        display: flex;
     }
-  
-    .mosaïques{
-      display: flex;
-      flex-wrap: wrap;
-      padding-bottom: 5%;
-      padding-top: 5%;
+    .logo {
+        padding : 0.5em;
+
     }
-  
-    .mosaïques img{
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 10%;
+    .container {
+        padding : 1em;
     }
-  }
-  
-  /*=========TABLETTE=========*/
-  @media screen and (min-width:768px){
-  
-  }
-  
-  
-  /*=========DESKTOP=========*/
-  @media screen and (min-width:1024px){
-  
-  
-    img{
-      width: 80%;
-    }
-  
+    .img{
+        width: 80%;
+        }
     .présentation{
-      padding-right: 10%;
-      padding-left: 10%;
-      display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    background-color: cyan;
     }
-  
-    .mosaïques{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+    .mosaïques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     }
-  
     .mosaïques img{
-      width: 30%;
+    width: 30%;
     }
-  
-  }
-  
+        
+}
 
